@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>作业</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .top{
+            height: 30px;
+            background-color: #f4f4f4;
+        }
+        .top1{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .top1 >.left{
+            float: left;
+            font-size: 12px;
+            margin-top:6px;
+        }
+        .top1> .right{
+            float: right;
+            font-size: 12px;
+            margin-top: 6px;
+        }
+        .top a{
+            color: black;
+        }
+        .zhongjian{
+            
+            height: 160px;
+            border-top: 1px solid #ececec;
+            border-bottom: 3px solid #e00304;
+            margin: 0 auto;
+        }
+        .sousuo{
+    
+            margin:0 auto;
+        }
+    
+        #t1{
+            position: absolute;
+            top: 50px;
+            left: 500px;
+            width: 500px;
+            height: 40px;
+            border:2px solid #f83838;
+            color: #bcbcbc;
+            display: inline-block;
+            font-size: 14px;
+        }
+        #t2{
+            position: absolute;
+            top: 52px;
+            left: 911px;
+            width: 93px;
+            height: 40px;
+            background-color: #f83838;
+            border:2px solid #f83838;
+            font-size: 16px;
+            color: white;
+        }
+    
+        .gouwu{
+         float: right;
+           margin-top: 1px;
+            border:1px  solid #e3e3e3;
+            background-color: #f5f5f5;
+            display: inline-block;
+    
+        }
+         .gouwu img{
+        
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .gouwu p{
+        float: right;
+        margin-top: 8px;
+        margin-right: 15px;
+        }
+        .daohang{
+            width: 1200px;
+            height: 80px;
+            margin-left: 160px;
+        }
+        .daohang1{
+            margin-top:30px;
+            float: left;
+        
+        }
+        .daohang1 li{
+            list-style: none;
+            float: left;
+            width: 90px;
+            height: 33px;
+            line-height: 30px;
+            text-align: center;
+            
+        }
+        .daohang1 li a{
+            font-size: 16px;
+            color: black;
+        }
+        .daohang1 :hover{
+            background-color: #fd0304;
+            ;
+            color: white;
+        }
+        .zhuyao{
+            background-color: #fbfbfb;
+            height: 700px;
+
+        }
+        .xie{
+            background-color: #fff;
+            width: 1200px;
+            line-height: 97px;
+            margin: 0 auto;
+        }
+        .xie>a{
+            font-size: 14px;
+            color: #333;
+        }
+        .celan{
+            float: left;
+            width: 215px;
+            margin-left: 159.6px;
+            }
+        .celan1{
+            width: 215px;
+            height: 43px;
+            float: left;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            line-height: 40px;
+            background-color: #fff;
+        }
+        .celan1 >img{
+            margin-left: 15px;
+        }
+        .celan1 a{
+            font-size: 14px;
+            color:#333;
+        }
+        .sidebar-2{
+            width: 215px;
+            height: 500px;
+            clear: left;
+            
+            background-color: #fff;
+        }
+        .celan2 >li{
+            width: 215px;
+            height: 43px;
+            line-height: 80px;
+            text-indent: 50px;
+        }
+        .celan2 >a{
+            font-size: 14px;
+            color:#333;
+        }
+        .zhuyaoimg{
+
+            width: 1200px;
+            height: 400px;
+            background-color: #fff;
+            float: left;
+            margin-left: 220px;
+            margin-top: 10px;
+
+        }
+        #tu1{
+            width: 250px;
+            height:200px;
+            float: left;
+margin-left: 50px;
+
+        }
+        #tu2{
+            width: 250px;
+          height: 200px;
+            float: left;
+            margin-left: 50px;
+        }
+        #tu3{
+            width: 250px;
+          height: 200px;
+            float: left;
+            margin-left: 50px;
+        }
+        #tu4{
+            width: 250px;
+          height: 200px;
+            float: left;
+            margin-left: 50px;
+        }
+        #tu5{
+            width: 250px;
+          height: 200px;
+            float: left;margin-left: 50px;
+        }
+        #tu6{
+            width: 250px;
+          height: 200px;
+            float: left;margin-left: 50px;
+        }
+        #tu7{
+            width: 250px;
+          height: 200px;
+            float:left;margin-left: 50px;
+        }
+        #tu8{
+            width: 250px;
+          height: 200px;
+            float:left;margin-left: 50px;
+        }
+        
+        
+        .dibu{
+            height: 500px;
+            background-color: #2e2e2e;
+
+        }
+        .dibu1{
+            width: 1400px;
+            height: 200px;
+            text-align: left;
+            margin-left: 160px;
+            float: left;
+            
+
+        }
+        .dibu1>div{
+            float: left;
+            width: 250px;
+            color: white;
+            height: 45px;
+            line-height: 45px;
+            text-indent: center;
+        }
+        .dibu1> li{
+            width: 236px;
+            height: 25px;
+            display: inline-block;
+            font-size: 16px;
+            color: #fff;
+        }
+        .dibu2{
+            width: 1200px;
+            height: 60px;
+
+            border-top: 1px solid #454545;
+            margin-top: 20px;
+            margin-left: 160px;
+            text-align: center;
+           
+        }
+        #zhijia{
+            margin-left: 160px;
+        }
+        .celan li{
+            list-style: none;
+        }
+        </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top1">
+        <div class="left">
+            <p>我的收藏 E族之家手机版
+            <img src="QQ.png">
+            3282203328
+        </p>
+        </div>  
+        <div class="right">
+            <p>扫描加入 欢迎来到E族之家，
+            <a href="#">请登录</a>|
+            <a href="#">请注册</a>
+            </p>
+        </div>  
+        </div>
+    </div>
+    <div class="zhongjian">
+        <div class="zhongjian1">
+            <img id="zhijia" src="之家.png">
+            
+            <div class="sousuo">
+            <form>
+            <input id="t1" type="text"  value="请输入关键词！">
+            <input id="t2" type="submit"value="搜索">
+            </form>
+            </div>
+
+            <div class="gouwu">
+                <img src="购物车.png">
+                <p>购物车(<span style="color: #f13a3a">0</span>)件</p>
+            </div>
+
+            <div class="daohang">
+                <ul class="daohang1">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">E族生活</a></li>
+                    <li><a href="#">E族服务</a></li>
+                    <li><a href="#">E族爱心</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="zhuyao">
+
+        <div class="xie">
+            <a href="#">当前位置：E族爱心</a>
+            >
+            <a href="#">食品</a>
+            
+        </div>
+
+        <div class="celan">
+            <ul class="celan1">
+                <li><span><img src="列表.png"></span>
+                <a href="#">  &nbsp&nbsp全部分类</a></li>
+                
+            </ul>
+            <ul class="calan2">
+                <li><a href="#">>食品</a></li>
+                <li><a href="#">>生活用品</a></li>
+            </ul>
+        </div>
+        <div class="zhuyaoimg">
+          <div id="tu1">
+            <img src="tu1.png">
+            <p>精品辣椒100g</p>
+            <p>¥ 90.00</p>
+              
+          </div>
+           <div id="tu2">
+            <img src="tu2.png">
+            <p>特级百香果3斤</p>
+            <p>¥ 90.00</p>
+              
+          </div>
+           <div id="tu3">
+            <img src="tu3.png">
+            <p>万维啤酒500ml</p>
+            <p>¥ 90.00</p>
+              
+          </div>
+           <div id="tu4">
+            <img src="tu4.png">
+            <p>万维啤酒500ml</p>
+            <p>¥ 90.00</p>
+
+              
+          </div>
+
+             <div id="tu5">
+            <img src="tu1.png">
+            <p>精品辣椒100g</p>
+            <p>¥ 90.00</p>
+              
+          </div>
+           <div id="tu6">
+            <img src="tu2.png">
+            <p>特级百香果3斤</p>
+            <p>¥ 90.00</p>
+              
+          </div>
+           <div id="tu7">
+            <img src="tu3.png">
+            <p>万维啤酒500ml</p>
+            <p>¥ 90.00</p>
+              
+          </div>
+           <div id="tu8">
+            <img src="tu4.png">
+            <p>万维啤酒500ml</p>
+            <p>¥ 90.00</p>
+            
+              
+          </div>
+        </div>
+        
+    </div>
+    <div class="dibu">
+        <div class="dibu1">
+
+        <div>
+            <p>新手上路</p>
+            <p>售后流程</p>
+            <p>购物流程</p>
+            <p>订购方式</p>
+            
+        </div>
+        <div>
+            <p>配送方式</p>
+            <p>货到付款区域</p>
+            <p>配送支付查询</p>
+            <p>支付方式说明</p>
+            
+        </div>
+        <div>
+            <p>购物指南</p>
+            <p>常见问题</p>
+            <p>订购流程</p>
+            <p>注册新会员</p>
+            
+        </div>
+        <div>
+            <p>售后服务</p>
+            <p>退换货原则</p>
+            <p>售后服务保证</p>
+            <p>换货流程</p>
+            
+        </div>
+        <div>
+            <p>关于我们</p>
+            <p>网站故障报告</p>
+            <p>联系我们</p>
+            <p>投诉与建议</p>
+            
+        </div>
+        </div>  
+        <div class="dibu2">
+            <p>E族生活  |  居家维修保障 | 住宿优惠信息 | 出行接送  |  E族活动  |  E族爱心  |  积分商城</p>
+            <P>© 2017-2018  E族之家  版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号
+</P>
+        </div>
+    </div>
+</body>
+</html>
